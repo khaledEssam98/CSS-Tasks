@@ -1,0 +1,176 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+--mainColor:#FF5722;
+--secondColor:#009688;
+}
+
+/* Ass 1 */
+.ass-1 h1{
+    width: 150px;
+    height: 100px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+
+.ass-1 h1::before,
+.ass-1 h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    z-index: -1;
+}
+
+.ass-1 h1::before {
+    transform: skew(10deg, 10deg);
+}
+
+.ass-1 h1::after {
+    transform: skew(-10deg, -10deg);
+}
+
+/* Ass 2 */
+
+.ass-2 h1 {
+    width: 150px;
+    height: 100px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondColor);
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+
+.ass-2 h1::before,
+.ass-2 h1::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: var(--secondColor);
+    transform: skew(20deg);
+}
+
+.ass-2 h1::before {
+    width: 100%;
+    right: 20px;
+    z-index: -1;
+
+}
+
+.ass-2 h1::after {
+    width: 15%;
+    left: -50px; 
+}
+
+/* Ass 3 */
+
+/* 
+.class {
+  transform(translateX(20), translateY(100) scaleX(3), skewY(0.2679), skewX(0), scaleY(3);
+} 
+*/
+
+/* Ass 4 */
+.ass-4 {
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    background-color: #607D8B;
+    position: relative;
+    border-bottom: 5px solid #000000;
+}
+
+.ass-4::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: #000000;
+    transform: rotate(44deg); 
+    left: 29px;
+    top: -70px;
+    border-right: 4px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF; 
+}
+
+.ass-4::after {
+    content: "Elzero";
+    position: absolute;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #ffffff;
+    bottom: 5px;
+    left: 10px;
+}
+
+/* Ass 5 */
+
+.one,
+.two {
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    perspective: 600px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 1s 0s ease;
+    position: relative; 
+}
+
+.ass-5 .one::before,
+.ass-5 .two::before,
+.ass-5 .one::after,
+.ass-5 .two::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-5 .one::before,
+.ass-5 .two::before {
+    content: "Front";
+    background-color: #EA2264;
+}
+
+.ass-5 .one::after,
+.ass-5 .two::after {
+    content: "Back";
+    background-color: #1692FC;
+    backface-visibility: hidden;
+    
+}
+
+.ass-5 .one::after {
+    transform: rotateY(180deg);
+}
+
+.ass-5 .two::after {
+    transform: rotateX(180deg);
+}
+
+.ass-5 .one:hover {
+    transform: rotateY(180deg);
+}
+
+.ass-5 .two:hover {
+    transform: rotateX(180deg);
+}

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Ass 1 */
+.parent div{
+margin: 70px auto;
+width: 300px;
+height: 60px;
+text-align: center;
+line-height: 4;
+margin: 20px auto;
+}
+
+
+.parent .one,
+.parent .three{
+    background-color: #EEEEEE;
+}
+
+div:empty{
+    background-color: red;
+}
+
+/* Ass 2 */
+.parent-1 {
+    background-color: #D4D4D4;
+    margin: 70px auto;
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    line-height: 3;
+    font-size: 18px;
+}
+
+.parent-1::first-letter{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 12px 10px;
+    margin-left: -45px;
+    margin-right: 10px;
+}
+
+/* Ass 3 */
+
+.parent-2 {
+    margin: 70px auto;
+    width: 400px;
+    
+}
+
+.parent-2 p {
+    position: relative;
+    padding: 16px;
+    background-color: #EFEFEF;
+    border-left: 5px solid #E91E63;
+}
+
+
+.parent-2 p::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -28px;
+    top: 50%;
+    margin-top: -12.5px;
+    border: 12px solid;
+    border-color: transparent #E91E63 transparent transparent;
+}
+
+
+.parent-2 p::before {
+    content: attr(data-person);
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 15px;
+    padding: 15px ;
+    background-color: #DDDDDD;
+    left: -115px;
+    top: 50%;
+    margin-top: -22px;
+}
+
+/* Ass 4 */
+
+.parent-3{
+    width: 450px;
+    margin: 70px auto;
+}
+
+.parent-3 p{
+    position: relative;
+    padding: 25px 90px;
+    background-color: #EFEFEF;
+    counter-increment: numbers;
+}
+
+.parent-3 p::before{
+    content: counter(numbers);
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    line-height: 3.5;
+    font-size: 20px;
+    top: 50%;
+    left: 0;
+    margin-top: -34px;
+}
+
+
+
+.parent-3 p::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background-color: #F44336;
+    top: 50%;
+    right: 0;
+    margin-top: -34px;
+
+}

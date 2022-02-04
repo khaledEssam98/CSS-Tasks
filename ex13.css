@@ -1,0 +1,69 @@
+
+*{
+    box-sizing: border-box;
+ }
+
+
+/* Ass 1 */
+.ass-1, .ass-2 {
+    width:600px;
+    margin: 80px auto;
+}
+
+.ass-1 div{
+    background-color: #EEEEEE;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+.ass-1 div::first-letter {
+    color: #F44336;
+}
+
+.ass-1 div::before{
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 140px;
+    left: -10px;
+    top: -10px;
+    z-index: -1;
+    background-image: linear-gradient(
+    to right,
+    #F44336 20%, 
+    #2196F3 20%, #2196F3 40%,
+    #4CAF50 40%, #4CAF50 60%,
+    #E91E63 60%, #E91E63 80%, 
+    #673AB7 80%);
+}
+
+/* Ass 2 */
+
+.ass-2{
+    position: relative;
+}
+
+.ass-2 input {
+    border: none;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+    font-size: 25px;
+    width: 600px;
+    caret-color: red;
+}
+
+.ass-2 div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    margin-top: 75px;
+    background-image: linear-gradient( to right, #F44336 50%, #009688 50%);
+}
+

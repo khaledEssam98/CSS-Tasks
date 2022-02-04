@@ -1,0 +1,262 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Ass 1 */
+
+.ass-1 div{
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: #FCFCFF;
+    border-radius: 50%;
+    border: 5px solid #EB175D;
+    border-top-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: turna;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+.ass-1 div::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:5px solid #2391F0;
+    border-bottom-color: transparent;
+}
+
+.ass-1 div::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:5px solid #FCAB00;
+    border-left-color: transparent;
+}
+
+
+@keyframes turna {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+.ass-1 div:hover {
+    animation-play-state: paused;
+}
+
+/* Ass 2 */
+
+.ass-2 div{
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: #FCFCFF;
+    border-radius: 50%;
+    border:5px solid #2391F0;
+    border-bottom-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: turna-2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+
+.ass-2 div::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:5px solid #FCAB00;
+    border-bottom-color: transparent;
+    animation-name: turna-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.ass-2 div::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:5px solid #000000;
+    border-bottom-color: transparent;
+    animation-name: turna-2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+
+@keyframes turna-2 {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ass-2 div:hover,
+.ass-2 div:hover::before,
+.ass-2 div:hover::after {
+    animation-play-state: running;
+}
+
+/* Ass 3 */
+
+.ass-3 {
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: #D8D8BD;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    border-bottom-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: turna-3 1s infinite linear reverse;
+}
+
+@keyframes turna-3 {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ass 4 */
+
+.ass-4 {
+    width: 720px;
+    height: 600px;
+    padding: 20px;
+    margin: 80px auto;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 80px 240px 40px 80px 240px ;
+    grid-template-rows: 80px 160px 80px 160px 80px;
+    position: relative;
+    
+}
+.ass-4 div {
+    background-color: #323234;   
+}
+.ass-4 .e-one {
+    grid-area: 1 / 1 / 6 / 2;
+}
+.ass-4 .e-two {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.ass-4 .e-three {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.ass-4 .e-four {
+    grid-area: 5 / 2 / 6 / 3;
+}
+.ass-4 .l-five {
+    grid-area: 1 / 4 / 6 / 5;
+}
+.ass-4 .l-six {
+    grid-area: 5 / 5 / 6 / 6;
+}
+.ass-4 .e {
+    width: 55px;
+    height: 55px;
+    background-color: #FEA604;
+    position: absolute;
+    top: 32.5px;
+    left: 270px;
+    animation: animate-e 6s linear infinite;
+}
+@keyframes animate-e {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-237.5px, 0);
+    }
+    15% {
+        transform: translate(-237.5px, 240px);
+    }
+    20% {
+        transform: translate(0, 240px);
+    }
+    25% {
+        transform: translate(-240px, 240px);
+    }
+    30% {
+        transform: translate(-237.5px, 480px);
+    }
+    35% {
+        transform: translate(0, 480px);
+    }
+    40% {
+        transform: translate(-237.5px, 480px);
+    }
+    45% {
+        transform: translate(-237.5px, 0);
+    }
+    50% {
+        transform: translate(0);
+    }
+}
+.ass-4 .l {
+    width: 55px;
+    height: 55px;
+    background-color: #FEA604;
+    position: absolute;
+    bottom: 32.5px;
+    right: 35px;
+    animation: animate-l 6s linear infinite; 
+    opacity: 0;
+}
+@keyframes animate-l {
+    55% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    70% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-237.5px, 0);
+        opacity: 1;
+    }
+    90% {
+        transform: translate(-237.5px, -480px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-237.5px, -480px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --onecolor: #EEEEEE;
+    --twocolor: #FFFFFF;
+    --threecolor: #E91E63;
+    --fourcolor: #03A9F4;
+}
+
+/* Ass 1 */
+.ass-1 {
+    width: 300px;
+    height: 200px;
+    margin: 60px auto;
+    color: var(--fourcolor);
+    font-size: 50px;
+    font-weight: bold;
+    background-color: var(--onecolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    position: relative; 
+}
+
+.ass-1::before {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 210px;
+    background-color: var(--fourcolor); 
+    z-index: -1;
+    transform: rotate(-5deg);
+
+}
+
+.ass-1::after {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 210px;
+    background-color: var(--threecolor);
+    z-index: -2;
+    transform: rotate(5deg);
+}
+
+/* Ass 2 */
+ 
+.ass-2 {
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--onecolor);
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+.ass-2::before,
+.ass-2::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ass-2::before {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--threecolor);
+    border-left-color: var(--twocolor);
+    top: -10px;
+    left:-10px;  
+}
+
+.ass-2::after { 
+    width: 220px;
+    height: 220px;
+    border: 10px solid var(--fourcolor);
+    border-right-color: var(--twocolor);
+    top: -20px;
+    left: -20px;    
+} 
+
+
+
+/* Ass 3 */
+
+.ass-3 {
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--onecolor);
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+.ass-3::before,
+.ass-3::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ass-3::before {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--threecolor);
+    border-left-color: var(--twocolor);
+    top: -10px;
+    left:-10px; 
+    transition: 0.5s 0s ease; 
+}
+
+.ass-3::after { 
+    width: 220px;
+    height: 220px;
+    border: 10px solid var(--fourcolor);
+    border-right-color: var(--twocolor);
+    top: -20px;
+    left: -20px;
+    transition: 0.5s 0s ease; 
+} 
+
+.ass-3:hover::before,
+.ass-3:hover::after {
+    transform: rotate(360deg);
+}
+

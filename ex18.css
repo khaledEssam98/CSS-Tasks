@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+:root {
+--mainColor:red;
+}
+
+.ass-1,
+.ass-2,
+.ass-3,
+.ass-4,
+.ass-5,
+.ass-6,
+.ass-7,
+.ass-8 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 40px;
+}
+
+/* Ass 1 */
+.ass-1 div.main.red {
+color: var(--mainColor);
+}
+
+/* Ass 2 */
+.ass-2 .parent:first-child .child:last-child {
+    color: var(--mainColor);
+}
+
+/* Ass 3 */
+  
+.ass-3 .parent:nth-of-type(2){
+    color: var(--mainColor);
+}
+
+/* Ass 4 */
+.ass-4 div[title]:not(.no-need , :last-child , :nth-last-of-type(3)){
+    color: var(--mainColor);
+}
+
+
+/* Ass 5 */
+.ass-5 div:nth-of-type(2) :not(:first-child){
+    color: var(--mainColor);
+}
+
+/* Ass 6 */
+.ass-6 div :nth-last-of-type(2):not(.no-need :nth-last-child(2)){
+    color: var(--mainColor);
+}
+
+
+/* Ass 7 */
+
+.ass-7 div:first-child :nth-child(5){
+    color: var(--mainColor);
+}
+
+/* Ass 8 */
+
+.ass-8 div :not(:first-child, :last-child , h3){
+    color: red;
+
+}
+
+

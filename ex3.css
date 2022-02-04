@@ -1,0 +1,50 @@
+/* Ass 1 */
+.ass-1 div {
+    background-color: #EEE;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+}
+
+.one{
+    outline: 5px solid black;
+    border: 5px solid red;
+}
+
+.two{
+    outline: 5px solid black;
+    border-width: 5px;
+    border-color: blue green;
+    border-style: solid;
+}
+
+.three{
+    outline: 5px solid black;
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+
+/* Ass 2  */
+.ass-2 div {
+    background-color:#eee;
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.four{
+    border-left: 8px solid rgb(255, 0, 157);
+    outline: 20px solid #EEE;
+}
+
+.five{
+    border-left: 8px solid;
+    outline: 20px solid #EEE;
+    visibility: hidden;
+}
+
+.sex{
+    border-left: 8px solid rgb(14, 142, 151);
+    outline: 20px solid #EEE;
+}

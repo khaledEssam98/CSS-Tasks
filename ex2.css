@@ -1,0 +1,103 @@
+/* Assignment 1 */
+.One div{
+    padding: 20px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.assign-1-shape-1{
+    background-color: blueviolet;
+    background-color: rgb(138, 43, 226);
+    background-color: #8a2be2;
+    background-color: hsl(271, 76%, 53%);
+}
+
+.assign-1-shape-2{
+    background-color: rgb(138 43 226 / 50% );
+}
+
+.assign-1-shape-3{
+    background-color: rgb(138, 43, 226, 0.1 );
+}
+/* Ass 2 */
+.Two div{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40px;
+    background-color: rgb(241, 240, 240);
+    background-image: url(Images/css-assignment-5-8.png);
+}
+
+.assign-2-shape-1{
+background-repeat: no-repeat;
+}
+
+.assign-2-shape-2{
+background-repeat: repeat-y;
+}
+
+.assign-2-shape-3{
+background-repeat: repeat-x;
+}
+
+.assign-2-shape-4{
+background-repeat: repeat;
+}
+
+
+/* Ass 3 */
+.three div{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40 px;
+    background-color: rgb(241, 240, 240) ;
+    background-image: url(Images/css-assignment-5-8.png);
+}
+
+.assign-3-shape-1{
+    background-repeat: no-repeat;
+}
+.assign-3-shape-2{
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.assign-3-shape-3{
+   background-repeat: repeat-x;
+   background-position: bottom;
+}
+
+.assign-3-shape-4{
+    background-repeat: repeat;
+}
+/* Ass 4 */
+.Four div{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40px;
+    background-color: rgb(241, 240, 240) ;
+    background-image: url(Images/css-assignment-5-8.png);
+}
+
+.assign-4-shape-1{
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.assign-4-shape-2{
+ background-repeat: no-repeat;
+ background-size:80% 100%;
+ background-position: right;
+}
+
+.assign-4-shape-3{
+background-repeat: no-repeat;
+background-size:100% 80%;
+background-position: bottom;   
+}
+
+.assign-4-shape-4{
+background-repeat: no-repeat;
+background-size:50%;
+background-position: right bottom;
+    
+}

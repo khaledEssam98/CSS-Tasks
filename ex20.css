@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: #DDDDDD
+}
+
+
+/* Ass-1 */
+.parent {
+    position: relative;
+    margin: 20px auto;
+    width: 1200px;
+    height: 200px;
+}
+
+.parent div {
+  background-color: green;
+  color: white;
+}
+.product {
+  background-color: red;
+  color: white;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+} 
+
+/* Ass-2 */
+
+.ass-2 {
+    margin: 90px;
+}
+
+.ass-2 .arrow {
+    width: 600px;
+    margin: 40px auto;
+    background-color: var(--color);
+    padding: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.ass-2 .top::after {
+    content: "";
+    position: absolute;
+    border: 21px solid transparent;
+    border-bottom-color: var(--color);
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ass-2 .right::after {
+    content: "";
+    position: absolute;
+    border: 21px solid transparent;
+    border-left-color: var(--color);
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.ass-2 .bottom::after {
+    content: "";
+    position: absolute;
+    border: 21px solid transparent;
+    border-top-color: var(--color);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ass-2 .left::after {
+    content: "";
+    position: absolute;
+    border: 21px solid transparent;
+    border-right-color: var(--color);
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}

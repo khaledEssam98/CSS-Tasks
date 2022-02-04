@@ -1,0 +1,63 @@
+/* Ass 1 */
+.parent-1,
+.parent-2{
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    padding: 40px 60px;
+    margin: 10px auto;
+    border: 5px solid rgb(255, 87, 34);
+}
+
+.parent-2{
+    border: 5px solid rgb(15, 156, 143);
+}
+
+.parent-1 p,
+.parent-2 p{
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    font-size: 30px;
+    padding: inherit;
+    border: inherit;
+}
+
+/* Ass 2 */
+
+.parent-3{
+    text-align: center;
+    font-size: 80px;
+   
+}
+.parent-3 .one{
+    font-family: 'Open Sans', sans-serif;
+}
+.parent-3 .two{
+    font-family: 'Cairo', sans-serif;
+    font-weight:bold;
+}
+.parent-3 .three{
+    font-family: 'Jomhuria', cursive;
+}
+
+
+/* Ass 3 */
+html{
+    font-size: 20px;
+}
+.parent-4{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.parent-4 .four{
+    font-size: 2.5rem;
+}
+
+.parent-4 .five{
+    font-size: 2rem;
+}
+
+.parent-4 .six{
+    font-size: 1.5rem;
+}

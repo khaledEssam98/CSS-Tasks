@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ass 1 */
+.assign-one {
+    width: 200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+@media print {
+    .assign-one {
+        font-size: 40px;
+    }
+}
+
+/* Ass 2 */
+
+.assign-two {
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.assign-two > div {
+    width: calc(25% - 20px);
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.assign-two div h3 {
+    color: #09998C;
+    margin-bottom: -15px;
+}
+
+.assign-two div p {
+    font-size: 15px;
+}
+
+/* Medium Screen */
+@media (max-width: 768px) {
+    .assign-two > div {
+        width: calc(50% - 30px);
+        margin: 15px;
+    }
+    .assign-two div h3 {
+        color: #FF0000;
+    }
+    .assign-two div p {
+        font-size: 15px;
+    }
+}
+
+/* Small Screen */
+@media  (max-width: 480px) {
+    .assign-two > div {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+    .assign-two div h3 {
+        color: #000000;
+    }
+    .assign-two div p {
+        font-size: 15px;
+    }
+}
+
+/* Ass 3 */
+
+.assign-three {
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.assign-three > div {
+    background-color: #EEEEEE;
+    text-align: center;
+    margin: 15px;
+}
+
+.assign-three .One {
+    width: 100%;
+}
+
+.assign-three .Two {
+    width: calc(50% - 30px);
+    align-items: flex-start;
+}
+
+.assign-three .Three {
+    width: calc(50% - 30px);
+    align-items: flex-end;
+}
+
+.assign-three .Four {
+    width: 100%;
+}
+
+.assign-three div h4 {
+    color: #09998C;
+    margin-bottom: -10px;
+}
+
+.assign-two div p {
+    font-size: 15px;
+}
+
+/* Medium Screen */
+@media (max-width: 768px) {
+    .assign-three .One {
+        width: 100%;
+    }
+    .assign-three div:not(:first-child){
+        width: calc(100% / 3 - 30px);
+    }
+    .assign-three div h4 {
+        color: #FF0000;
+        font-size: 15px;
+    }
+    .assign-three div p {
+        font-size: 12px;
+    }
+}
+
+/* Small Screen*/
+@media  (max-width: 480px) {
+    .assign-three > div {
+        width: calc(100% - 30px) !important;
+        margin: 15px;
+    }
+    .assign-three div h4 {
+        color: #000000;
+    }
+    .assign-three div p {
+        font-size: 12px;
+    }
+}
